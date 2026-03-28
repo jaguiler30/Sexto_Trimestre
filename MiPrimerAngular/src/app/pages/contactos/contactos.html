@@ -1,1 +1,46 @@
-<p>contactos works!</p>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario</title>
+</head>
+<body>
+
+    <h2>Registro</h2>
+
+    <form action="#" method="post">
+        
+        <!-- Campo Nombre completo-->
+        <label for="nombre">Nombre Completo:</label><br>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+
+        <!-- Campo Numero de Identificacion -->
+        <label for="correo">Numero de Identificacion:</label><br>
+        <input type="text" id="correo" name="correo" required><br><br>
+
+        <!-- Campo Fecha de Nacimiento -->
+        <label for="edad">Fecha de nacimiento:</label><br>
+        <input type="date" id="edad" name="edad"><br><br>
+
+        <!-- Campo Estado Civil -->
+        <label for="estado_civil">Estado Civil:</label><br>
+        <select id="estado_civil" name="estado_civil">
+            <option value="soltero">Solter@</option>
+            <option value="casado">Casad@</option>
+        </select><br><br>
+
+        
+        <!-- Campo Consentimiento -->
+        <label for="consentimiento_politica">
+        <input type="checkbox" id="consentimiento_politica" name="consentimiento_politica" value="1" required>
+        Acepto la política de manejo de datos personales
+        </label><br><br>
+
+        <!-- Botones -->
+        <button type="submit">Guardar</button>
+        <button type="reset">Cancelar</button>
+
+    </form>
+
+</body>
+</html>
